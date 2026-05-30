@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="300" controls oncanplay="ready()">
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<p id="msg"></p>
+
+<script>
+
+function ready(){
+    document.getElementById("msg").innerHTML=
+    "Video ready to play";
+}
+
+window.onbeforeunload=function(){
+    return "Form not saved";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<select id="event">
+    <option>Music</option>
+    <option>Sports</option>
+    <option>Workshop</option>
+</select>
+
+<button onclick="save()">Save</button>
+
+<button onclick="clearData()">Clear Preferences</button>
+
+<script>
+
+function save(){
+    let x=document.getElementById("event").value;
+    localStorage.setItem("event",x);
+}
+
+window.onload=function(){
+    let x=localStorage.getItem("event");
+    if(x){
+        document.getElementById("event").value=x;
+    }
+}
+
+function clearData(){
+    localStorage.clear();
+    sessionStorage.clear();
+}
+
+</script>
+
+</body>
+</html>
