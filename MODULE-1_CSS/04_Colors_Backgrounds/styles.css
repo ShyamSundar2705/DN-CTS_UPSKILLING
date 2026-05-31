@@ -1,0 +1,16 @@
+body{
+    background-color:#f0f0f0;
+    background-image:url("bg.jpg");
+}
+
+h1{
+    color:#ff0000;
+}
+
+p{
+    background-color:rgba(0,0,255,0.3);
+}
+
+h2{
+    background:linear-gradient(to right, blue, lightblue);
+}
