@@ -1,0 +1,28 @@
+nav a{
+    display:inline-block;
+    margin:10px;
+}
+
+img{
+    width:300px;
+}
+
+body{
+    width:90%;
+}
+
+@media screen and (max-width:768px){
+
+    nav a{
+        display:block;
+    }
+
+    img{
+        width:150px;
+    }
+
+    body{
+        font-size:14px;
+    }
+
+}
